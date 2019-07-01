@@ -5,33 +5,35 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Button;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
 
-    private EditText p1Name;
-    private EditText p2Name;
+    EditText p1Name;
+    EditText p2Name;
 
-    private TextView p1Score;
-    private TextView p2Score;
-    private TextView turnIndicator;
-    private TextView turnPoints;
+    TextView p1Score;
+    TextView p2Score;
+    TextView turnIndicator;
+    TextView turnPoints;
 
-    private ImageView diePicture;
+    ImageView diePicture;
 
     private Button rollDie;
     private Button endTurn;
     private Button newGame;
 
-    private String player1Name;
-    private String player2Name;
+    Random rand = new Random();
 
-    private int p1;
-    private int p2;
-    private int score;
+    String player1;
+    String player2;
+
+    private GameLogic logic = new GameLogic();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,41 +54,91 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         endTurn = (Button) findViewById(R.id.endTurnButton);
         newGame = (Button) findViewById(R.id.newGameButton);
 
-        player1Name = "Player 1";
-        player2Name = "Player 2";
-
-        p1 = 0;
-        p2 = 0;
-        score = 0;
-
         rollDie.setOnClickListener(this);
         endTurn.setOnClickListener(this);
         newGame.setOnClickListener(this);
+
+        logic.resetGame(); //sets the variables of logic
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.rollDieButton:
-
+                if (logic.winner <= 0) {
+                    logic.rollTheDie(rand);
+                    updateScreen();
+                }
+                else {
+                    logic.resetGame();
+                    updateScreen();
+                }
                 break;
             case R.id.endTurnButton:
-
+                logic.endTurn();
+                updateScreen();
                 break;
             case R.id.newGameButton:
-                p1 = 0;
-                p2 = 0;
-                score = 0;
-                player1Name = "Player 1";
-                player2Name = "Player 2";
-
-                p1Score.setText("0");
-                p2Score.setText("0");
+                logic.resetGame();
+                updateScreen();
                 p1Name.setText("");
                 p2Name.setText("");
-                turnIndicator.setText("Please Enter Your Names");
-                turnPoints.setText("0");
+                turnIndicator.setText("Player 1 will begin first");
                 break;
         }
+    }
+
+    private void updateScreen() {
+        //sets names of the players for the turn/win messages
+        player1 = p1Name.getText().toString();
+        if (player1.length() == 0) {
+            player1 = "Player 1"; //if a name has not been entered use 'Player 1'
+        }
+        player2 = p2Name.getText().toString();
+        if (player2.length() == 0) {
+            player2 = "Player 2"; //if a name has not been entered use 'Player 2'
+        }
+
+        //sets the picture of the die depending on the last roll
+        if (logic.roll == 1) {
+            diePicture.setImageResource(R.drawable.die1);
+        }
+        else if (logic.roll == 2) {
+            diePicture.setImageResource(R.drawable.die2);
+        }
+        else if (logic.roll == 3) {
+            diePicture.setImageResource(R.drawable.die3);
+        }
+        else if (logic.roll == 4) {
+            diePicture.setImageResource(R.drawable.die4);
+        }
+        else if (logic.roll == 5) {
+            diePicture.setImageResource(R.drawable.die5);
+        }
+        else if (logic.roll == 6) {
+            diePicture.setImageResource(R.drawable.die6);
+        }
+
+        //sets the score of the players
+        p1Score.setText(Integer.toString(logic.p1));
+        p2Score.setText(Integer.toString(logic.p2));
+
+        //if there has been a winner, announce it! otherwise announce which player's turn it is
+        if (logic.winner == 1) {
+            turnIndicator.setText(player1 + " WINS!");
+        }
+        else if (logic.winner == 2) {
+            turnIndicator.setText(player2 + " WINS!");
+        }
+        else {
+            if (logic.turn == 1) {
+                turnIndicator.setText(player1 + "'s turn");
+            } else if (logic.turn == 2) {
+                turnIndicator.setText(player2 + "'s turn");
+            }
+        }
+
+        //set the score of the current turn (or 0 if turn ended)
+        turnPoints.setText(Integer.toString(logic.score));
     }
 }

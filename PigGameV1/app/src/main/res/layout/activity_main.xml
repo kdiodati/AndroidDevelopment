@@ -37,6 +37,7 @@
         android:hint="Name"
         android:inputType="textPersonName"
         android:selectAllOnFocus="true"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/player1Text"
         app:layout_constraintStart_toStartOf="@+id/player1Text"
         app:layout_constraintTop_toBottomOf="@+id/player1Text" />
@@ -48,6 +49,7 @@
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/player2Text"
         app:layout_constraintStart_toStartOf="@+id/player2Text"
         app:layout_constraintTop_toBottomOf="@+id/player2Text" />
@@ -101,7 +103,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Please Enter Your Names"
+        android:text="Player 1 will begin first"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -113,7 +115,7 @@
         android:id="@+id/diceImageView"
         android:layout_width="150sp"
         android:layout_height="150sp"
-        android:scaleType="centerInside"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="@+id/turnIndicator"
         app:layout_constraintStart_toStartOf="@+id/turnIndicator"
         app:layout_constraintTop_toBottomOf="@+id/turnIndicator"

@@ -39,12 +39,12 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.clickerButton:
-                count = count + 1;
-                counter.setText(Integer.toString(count));
+                count = count + 1; //increment count
+                counter.setText(Integer.toString(count)); //make int a string and display it
                 break;
             case R.id.resetButton:
-                count = 0;
-                counter.setText("0");
+                count = 0; //reset count to zero
+                counter.setText("0"); //display zero on the screen
                 break;
         }
     }
