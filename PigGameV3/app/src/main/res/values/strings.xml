@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PigGameV3</string>
+
+    <string name="winning_score">winning_score</string>
+    <string name="pref_show_dice">pref_show_dice</string>
+    <string name="max_rolls">max_rolls</string>
+    <string name="custom_names">custom_names</string>
+</resources>

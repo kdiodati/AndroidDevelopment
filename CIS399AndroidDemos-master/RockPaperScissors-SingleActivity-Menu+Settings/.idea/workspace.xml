@@ -7,30 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb7eefaf-8c7b-4cfb-bc6e-52ee1d7769d0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../PigGameV2/.idea/dictionaries/Dell.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PigGameV2/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PigGameV2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PigGameV2/app/src/main/java/com/gmail/kdiodati/piggamev2/GameLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PigGameV2/app/src/main/java/com/gmail/kdiodati/piggamev2/SettingsActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PigGameV2/app/src/main/res/drawable/die1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PigGameV2/app/src/main/res/drawable/die2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PigGameV2/app/src/main/res/drawable/die3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PigGameV2/app/src/main/res/drawable/die4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PigGameV2/app/src/main/res/drawable/die5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PigGameV2/app/src/main/res/drawable/die6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PigGameV2/app/src/main/res/menu/menu_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PigGameV2/app/src/main/res/values/array.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PigGameV2/app/src/main/res/xml/preferences.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_23_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_23_4_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_23_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_23_4_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_23_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_23_4_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_23_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_23_4_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/preferences.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/preferences.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PigGameV1/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PigGameV1/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Zipped Apps/PigGameV1Diodati.rar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Zipped Apps/PigGameV1Diodati.rar" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -349,7 +326,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-1088" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" id="Project" order="0" visible="true" weight="0.17910448" />
       <window_info id="Structure" order="1" weight="0.25" />
