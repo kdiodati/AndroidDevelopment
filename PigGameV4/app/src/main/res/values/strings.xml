@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">PigGameV4</string>
+    <string name="app_name">PigGameV3</string>
+
+    <string name="winning_score">winning_score</string>
+    <string name="pref_show_dice">pref_show_dice</string>
+    <string name="max_rolls">max_rolls</string>
+    <string name="custom_names">custom_names</string>
+
+    <string name="rules">
+        Pig is a 2 player dice game.
+        The goal is to reach 100 points before the other player.
+        When it is your turn you can roll the die or pass the die to the other player.
+        If you roll a 1 then your turn is over and the other player is given the die.
+        Otherwise you can keep rolling, until a 1 is rolled.
+        If player 1 finishes first, player 2 gets one turn to beat player 1\'s score.
+        HAVE FUN!
+    </string>
 </resources>

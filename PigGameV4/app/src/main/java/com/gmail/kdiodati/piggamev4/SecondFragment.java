@@ -1,15 +1,18 @@
-package com.gmail.kdiodati.piggamev3;
+package com.gmail.kdiodati.piggamev4;
 
+import androidx.fragment.app.Fragment;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Button;
@@ -19,8 +22,8 @@ import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 import static android.view.View.INVISIBLE;
 
-public class MainActivity extends AppCompatActivity implements OnClickListener {
 
+public class SecondFragment extends Fragment implements OnClickListener {
     TextView p1Name;
     TextView p2Name;
 
@@ -50,9 +53,23 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     private GameLogic logic;
 
     @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.second_fragment, container, false);
+
+        rollDie = (Button) view.findViewById(R.id.rollDieButton);
+        endTurn = (Button) view.findViewById(R.id.endTurnButton);
+
+        rollDie.setOnClickListener(this);
+        endTurn.setOnClickListener(this);
+
+        return view;
+    }
+
+    /*
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.first_activity);
 
         p1Name = (TextView) findViewById(R.id.player1Text);
         p2Name = (TextView) findViewById(R.id.player2Text);
@@ -104,14 +121,16 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             updateScreen();
         }
     }
+    */
 
+    /*
     @Override
     protected void onResume() {
         super.onResume();
 
         Intent intent = getIntent();
-        player1Given = intent.getExtras().getString(FirstScreen.PLAYER_1);
-        player2Given = intent.getExtras().getString(FirstScreen.PLAYER_2);
+        player1Given = intent.getExtras().getString(FirstActivity.PLAYER_1);
+        player2Given = intent.getExtras().getString(FirstActivity.PLAYER_2);
 
         if (logic == null) {
             logic = new GameLogic();
@@ -156,7 +175,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         p1Name.setText(player1);
         p2Name.setText(player2);
     }
+    */
 
+    /*
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
         savedInstanceState.putInt("RollCount", logic.rollCount);
@@ -199,6 +220,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         }
         //this code is practically an exact copy of your rps game
     }
+    */
 
     @Override
     public void onClick(View v) {
@@ -219,6 +241,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 rollDie.setVisibility(VISIBLE);
                 break;
         }
+    }
+
+    public void startGame(GameLogic logic) {
+        this.logic = logic;
     }
 
     private void updateScreen() {

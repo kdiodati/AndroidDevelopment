@@ -10,13 +10,12 @@
         android:id="@+id/player1Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:text="Player 1"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/player2Text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/diceImageView" />
 
     <TextView
         android:id="@+id/player2Text"
@@ -25,7 +24,7 @@
         android:text="Player 2"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/diceImageView"
         app:layout_constraintStart_toEndOf="@+id/player1Text"
         app:layout_constraintTop_toTopOf="@+id/player1Text" />
 
@@ -33,7 +32,7 @@
         android:id="@+id/scoreText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="Score"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -45,7 +44,6 @@
         android:id="@+id/scoreText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="Score"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -77,25 +75,24 @@
         android:id="@+id/turnIndicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:text="Player 1 will begin first"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/player1ScoreHolder" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/diceImageView"
         android:layout_width="150sp"
         android:layout_height="150sp"
-        android:layout_marginTop="8dp"
         android:contentDescription="Die Image"
         android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="@+id/turnIndicator"
-        app:layout_constraintStart_toStartOf="@+id/turnIndicator"
-        app:layout_constraintTop_toBottomOf="@+id/turnIndicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/die1" />
 
     <TextView
@@ -106,9 +103,9 @@
         android:text="Points for this turn"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/diceImageView"
-        app:layout_constraintStart_toStartOf="@+id/diceImageView"
-        app:layout_constraintTop_toBottomOf="@+id/diceImageView" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/diceImageView"
+        app:layout_constraintTop_toTopOf="@+id/diceImageView" />
 
     <TextView
         android:id="@+id/turnPoints"
@@ -124,12 +121,12 @@
         android:id="@+id/rollDieButton"
         android:layout_width="170sp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
         android:text="Roll Die"
         android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/endTurnButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/turnPoints" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/endTurnButton"

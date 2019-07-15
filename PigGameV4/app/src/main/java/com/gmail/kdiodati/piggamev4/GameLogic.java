@@ -1,10 +1,13 @@
-package com.gmail.kdiodati.piggamev3;
+package com.gmail.kdiodati.piggamev4;
 
 import java.util.Random;
 
 class GameLogic{
 
     Random rand = new Random();
+
+    String player1;
+    String player2;
 
     int rollCount; //keeps track of rolls this turn
     int maxRolls; //sets the max number of rolls per turn
