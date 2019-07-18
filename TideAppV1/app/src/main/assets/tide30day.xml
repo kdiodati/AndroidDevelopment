@@ -1,0 +1,1472 @@
+
+	<datainfo>
+		<origin>NOAA/NOS/CO-OPS</origin>
+		<disclaimer>
+			Disclaimer: These data are based upon the latest information available as of the date of your request, and may differ from the published tide tables.
+		</disclaimer>
+	<datarange>Daily</datarange>
+		<producttype>Tide Prediction</producttype>
+		<stationname>San Carlos</stationname>
+		<state></state>
+		<stationid>TWC0399</stationid>
+	
+		<stationtype>Subordinate</stationtype>
+		<referencedToStationName>San Diego, San Diego Bay</referencedToStationName>
+		<referencedToStationId>9410170</referencedToStationId>
+		<HeightOffsetLow>+ -0.2</HeightOffsetLow>
+		<HeightOffsetHigh>+ 0</HeightOffsetHigh>
+		<TimeOffsetLow>0</TimeOffsetLow>
+		<TimeOffsetHigh>-9</TimeOffsetHigh>
+		
+		<BeginDate>20190801 04:22</BeginDate>
+		<EndDate>20190831 22:33</EndDate>
+		
+		<dataUnits>Feet</dataUnits>
+		 
+	<Timezone>LST_LDT</Timezone>
+	<Datum>MLLW</Datum>
+	<IntervalType>High/Low</IntervalType>
+	<data>
+	
+			<item>
+				<date>2019/08/01</date>
+				<day>Thu</day>
+		
+				<time>04:22 AM</time>
+			
+				<pred>-1.66</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/01</date>
+				<day>Thu</day>
+		
+				<time>10:36 AM</time>
+			
+				<pred>4.80</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/01</date>
+				<day>Thu</day>
+		
+				<time>03:53 PM</time>
+			
+				<pred>1.38</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/01</date>
+				<day>Thu</day>
+		
+				<time>09:56 PM</time>
+			
+				<pred>7.41</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/02</date>
+				<day>Fri</day>
+		
+				<time>05:03 AM</time>
+			
+				<pred>-1.57</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/02</date>
+				<day>Fri</day>
+		
+				<time>11:17 AM</time>
+			
+				<pred>4.99</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/02</date>
+				<day>Fri</day>
+		
+				<time>04:43 PM</time>
+			
+				<pred>1.28</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/02</date>
+				<day>Fri</day>
+		
+				<time>10:43 PM</time>
+			
+				<pred>7.08</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/03</date>
+				<day>Sat</day>
+		
+				<time>05:45 AM</time>
+			
+				<pred>-1.25</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/03</date>
+				<day>Sat</day>
+		
+				<time>12:00 PM</time>
+			
+				<pred>5.14</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/03</date>
+				<day>Sat</day>
+		
+				<time>05:37 PM</time>
+			
+				<pred>1.27</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/03</date>
+				<day>Sat</day>
+		
+				<time>11:33 PM</time>
+			
+				<pred>6.49</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/04</date>
+				<day>Sun</day>
+		
+				<time>06:27 AM</time>
+			
+				<pred>-0.73</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/04</date>
+				<day>Sun</day>
+		
+				<time>12:46 PM</time>
+			
+				<pred>5.25</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/04</date>
+				<day>Sun</day>
+		
+				<time>06:38 PM</time>
+			
+				<pred>1.33</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/05</date>
+				<day>Mon</day>
+		
+				<time>12:27 AM</time>
+			
+				<pred>5.68</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/05</date>
+				<day>Mon</day>
+		
+				<time>07:12 AM</time>
+			
+				<pred>-0.07</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/05</date>
+				<day>Mon</day>
+		
+				<time>01:37 PM</time>
+			
+				<pred>5.34</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/05</date>
+				<day>Mon</day>
+		
+				<time>07:49 PM</time>
+			
+				<pred>1.39</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/06</date>
+				<day>Tue</day>
+		
+				<time>01:31 AM</time>
+			
+				<pred>4.80</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/06</date>
+				<day>Tue</day>
+		
+				<time>07:59 AM</time>
+			
+				<pred>0.65</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/06</date>
+				<day>Tue</day>
+		
+				<time>02:33 PM</time>
+			
+				<pred>5.42</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/06</date>
+				<day>Tue</day>
+		
+				<time>09:14 PM</time>
+			
+				<pred>1.33</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/07</date>
+				<day>Wed</day>
+		
+				<time>02:53 AM</time>
+			
+				<pred>4.01</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/07</date>
+				<day>Wed</day>
+		
+				<time>08:54 AM</time>
+			
+				<pred>1.33</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/07</date>
+				<day>Wed</day>
+		
+				<time>03:35 PM</time>
+			
+				<pred>5.52</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/07</date>
+				<day>Wed</day>
+		
+				<time>10:48 PM</time>
+			
+				<pred>1.04</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/08</date>
+				<day>Thu</day>
+		
+				<time>04:38 AM</time>
+			
+				<pred>3.58</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/08</date>
+				<day>Thu</day>
+		
+				<time>10:00 AM</time>
+			
+				<pred>1.89</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/08</date>
+				<day>Thu</day>
+		
+				<time>04:40 PM</time>
+			
+				<pred>5.67</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/09</date>
+				<day>Fri</day>
+		
+				<time>12:12 AM</time>
+			
+				<pred>0.55</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/09</date>
+				<day>Fri</day>
+		
+				<time>06:25 AM</time>
+			
+				<pred>3.61</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/09</date>
+				<day>Fri</day>
+		
+				<time>11:14 AM</time>
+			
+				<pred>2.23</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/09</date>
+				<day>Fri</day>
+		
+				<time>05:42 PM</time>
+			
+				<pred>5.86</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/10</date>
+				<day>Sat</day>
+		
+				<time>01:15 AM</time>
+			
+				<pred>0.06</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/10</date>
+				<day>Sat</day>
+		
+				<time>07:39 AM</time>
+			
+				<pred>3.86</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/10</date>
+				<day>Sat</day>
+		
+				<time>12:22 PM</time>
+			
+				<pred>2.32</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/10</date>
+				<day>Sat</day>
+		
+				<time>06:36 PM</time>
+			
+				<pred>6.06</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/11</date>
+				<day>Sun</day>
+		
+				<time>02:03 AM</time>
+			
+				<pred>-0.31</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/11</date>
+				<day>Sun</day>
+		
+				<time>08:28 AM</time>
+			
+				<pred>4.11</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/11</date>
+				<day>Sun</day>
+		
+				<time>01:17 PM</time>
+			
+				<pred>2.25</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/11</date>
+				<day>Sun</day>
+		
+				<time>07:22 PM</time>
+			
+				<pred>6.24</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/12</date>
+				<day>Mon</day>
+		
+				<time>02:42 AM</time>
+			
+				<pred>-0.54</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/12</date>
+				<day>Mon</day>
+		
+				<time>09:03 AM</time>
+			
+				<pred>4.30</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/12</date>
+				<day>Mon</day>
+		
+				<time>02:01 PM</time>
+			
+				<pred>2.11</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/12</date>
+				<day>Mon</day>
+		
+				<time>08:03 PM</time>
+			
+				<pred>6.36</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/13</date>
+				<day>Tue</day>
+		
+				<time>03:16 AM</time>
+			
+				<pred>-0.64</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/13</date>
+				<day>Tue</day>
+		
+				<time>09:32 AM</time>
+			
+				<pred>4.43</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/13</date>
+				<day>Tue</day>
+		
+				<time>02:39 PM</time>
+			
+				<pred>1.95</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/13</date>
+				<day>Tue</day>
+		
+				<time>08:39 PM</time>
+			
+				<pred>6.42</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/14</date>
+				<day>Wed</day>
+		
+				<time>03:46 AM</time>
+			
+				<pred>-0.64</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/14</date>
+				<day>Wed</day>
+		
+				<time>09:57 AM</time>
+			
+				<pred>4.53</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/14</date>
+				<day>Wed</day>
+		
+				<time>03:13 PM</time>
+			
+				<pred>1.80</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/14</date>
+				<day>Wed</day>
+		
+				<time>09:12 PM</time>
+			
+				<pred>6.40</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/15</date>
+				<day>Thu</day>
+		
+				<time>04:14 AM</time>
+			
+				<pred>-0.56</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/15</date>
+				<day>Thu</day>
+		
+				<time>10:23 AM</time>
+			
+				<pred>4.62</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/15</date>
+				<day>Thu</day>
+		
+				<time>03:45 PM</time>
+			
+				<pred>1.68</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/15</date>
+				<day>Thu</day>
+		
+				<time>09:43 PM</time>
+			
+				<pred>6.29</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/16</date>
+				<day>Fri</day>
+		
+				<time>04:41 AM</time>
+			
+				<pred>-0.40</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/16</date>
+				<day>Fri</day>
+		
+				<time>10:48 AM</time>
+			
+				<pred>4.69</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/16</date>
+				<day>Fri</day>
+		
+				<time>04:18 PM</time>
+			
+				<pred>1.62</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/16</date>
+				<day>Fri</day>
+		
+				<time>10:14 PM</time>
+			
+				<pred>6.08</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/17</date>
+				<day>Sat</day>
+		
+				<time>05:08 AM</time>
+			
+				<pred>-0.17</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/17</date>
+				<day>Sat</day>
+		
+				<time>11:15 AM</time>
+			
+				<pred>4.74</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/17</date>
+				<day>Sat</day>
+		
+				<time>04:51 PM</time>
+			
+				<pred>1.61</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/17</date>
+				<day>Sat</day>
+		
+				<time>10:46 PM</time>
+			
+				<pred>5.75</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/18</date>
+				<day>Sun</day>
+		
+				<time>05:35 AM</time>
+			
+				<pred>0.14</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/18</date>
+				<day>Sun</day>
+		
+				<time>11:44 AM</time>
+			
+				<pred>4.76</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/18</date>
+				<day>Sun</day>
+		
+				<time>05:27 PM</time>
+			
+				<pred>1.66</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/18</date>
+				<day>Sun</day>
+		
+				<time>11:18 PM</time>
+			
+				<pred>5.32</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/19</date>
+				<day>Mon</day>
+		
+				<time>06:01 AM</time>
+			
+				<pred>0.53</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/19</date>
+				<day>Mon</day>
+		
+				<time>12:13 PM</time>
+			
+				<pred>4.78</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/19</date>
+				<day>Mon</day>
+		
+				<time>06:08 PM</time>
+			
+				<pred>1.74</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/19</date>
+				<day>Mon</day>
+		
+				<time>11:52 PM</time>
+			
+				<pred>4.79</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/20</date>
+				<day>Tue</day>
+		
+				<time>06:27 AM</time>
+			
+				<pred>0.97</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/20</date>
+				<day>Tue</day>
+		
+				<time>12:46 PM</time>
+			
+				<pred>4.78</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/20</date>
+				<day>Tue</day>
+		
+				<time>06:58 PM</time>
+			
+				<pred>1.83</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/21</date>
+				<day>Wed</day>
+		
+				<time>12:34 AM</time>
+			
+				<pred>4.21</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/21</date>
+				<day>Wed</day>
+		
+				<time>06:54 AM</time>
+			
+				<pred>1.44</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/21</date>
+				<day>Wed</day>
+		
+				<time>01:24 PM</time>
+			
+				<pred>4.79</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/21</date>
+				<day>Wed</day>
+		
+				<time>08:06 PM</time>
+			
+				<pred>1.87</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/22</date>
+				<day>Thu</day>
+		
+				<time>01:37 AM</time>
+			
+				<pred>3.61</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/22</date>
+				<day>Thu</day>
+		
+				<time>07:25 AM</time>
+			
+				<pred>1.92</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/22</date>
+				<day>Thu</day>
+		
+				<time>02:14 PM</time>
+			
+				<pred>4.83</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/22</date>
+				<day>Thu</day>
+		
+				<time>09:37 PM</time>
+			
+				<pred>1.73</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/23</date>
+				<day>Fri</day>
+		
+				<time>03:26 AM</time>
+			
+				<pred>3.19</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/23</date>
+				<day>Fri</day>
+		
+				<time>08:13 AM</time>
+			
+				<pred>2.36</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/23</date>
+				<day>Fri</day>
+		
+				<time>03:20 PM</time>
+			
+				<pred>4.97</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/23</date>
+				<day>Fri</day>
+		
+				<time>11:11 PM</time>
+			
+				<pred>1.29</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/24</date>
+				<day>Sat</day>
+		
+				<time>05:37 AM</time>
+			
+				<pred>3.23</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/24</date>
+				<day>Sat</day>
+		
+				<time>09:48 AM</time>
+			
+				<pred>2.66</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/24</date>
+				<day>Sat</day>
+		
+				<time>04:32 PM</time>
+			
+				<pred>5.28</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/25</date>
+				<day>Sun</day>
+		
+				<time>12:21 AM</time>
+			
+				<pred>0.65</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/25</date>
+				<day>Sun</day>
+		
+				<time>06:57 AM</time>
+			
+				<pred>3.58</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/25</date>
+				<day>Sun</day>
+		
+				<time>11:21 AM</time>
+			
+				<pred>2.66</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/25</date>
+				<day>Sun</day>
+		
+				<time>05:38 PM</time>
+			
+				<pred>5.75</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/26</date>
+				<day>Mon</day>
+		
+				<time>01:13 AM</time>
+			
+				<pred>-0.02</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/26</date>
+				<day>Mon</day>
+		
+				<time>07:41 AM</time>
+			
+				<pred>3.99</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/26</date>
+				<day>Mon</day>
+		
+				<time>12:29 PM</time>
+			
+				<pred>2.39</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/26</date>
+				<day>Mon</day>
+		
+				<time>06:34 PM</time>
+			
+				<pred>6.30</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/27</date>
+				<day>Tue</day>
+		
+				<time>01:57 AM</time>
+			
+				<pred>-0.63</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/27</date>
+				<day>Tue</day>
+		
+				<time>08:17 AM</time>
+			
+				<pred>4.40</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/27</date>
+				<day>Tue</day>
+		
+				<time>01:23 PM</time>
+			
+				<pred>1.97</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/27</date>
+				<day>Tue</day>
+		
+				<time>07:25 PM</time>
+			
+				<pred>6.83</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/28</date>
+				<day>Wed</day>
+		
+				<time>02:37 AM</time>
+			
+				<pred>-1.09</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/28</date>
+				<day>Wed</day>
+		
+				<time>08:52 AM</time>
+			
+				<pred>4.80</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/28</date>
+				<day>Wed</day>
+		
+				<time>02:11 PM</time>
+			
+				<pred>1.50</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/28</date>
+				<day>Wed</day>
+		
+				<time>08:13 PM</time>
+			
+				<pred>7.21</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/29</date>
+				<day>Thu</day>
+		
+				<time>03:16 AM</time>
+			
+				<pred>-1.35</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/29</date>
+				<day>Thu</day>
+		
+				<time>09:26 AM</time>
+			
+				<pred>5.17</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/29</date>
+				<day>Thu</day>
+		
+				<time>02:58 PM</time>
+			
+				<pred>1.04</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/29</date>
+				<day>Thu</day>
+		
+				<time>09:00 PM</time>
+			
+				<pred>7.37</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/30</date>
+				<day>Fri</day>
+		
+				<time>03:55 AM</time>
+			
+				<pred>-1.37</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/30</date>
+				<day>Fri</day>
+		
+				<time>10:02 AM</time>
+			
+				<pred>5.50</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/30</date>
+				<day>Fri</day>
+		
+				<time>03:46 PM</time>
+			
+				<pred>0.68</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/30</date>
+				<day>Fri</day>
+		
+				<time>09:46 PM</time>
+			
+				<pred>7.23</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/31</date>
+				<day>Sat</day>
+		
+				<time>04:33 AM</time>
+			
+				<pred>-1.14</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/31</date>
+				<day>Sat</day>
+		
+				<time>10:40 AM</time>
+			
+				<pred>5.74</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/31</date>
+				<day>Sat</day>
+		
+				<time>04:34 PM</time>
+			
+				<pred>0.47</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2019/08/31</date>
+				<day>Sat</day>
+		
+				<time>10:33 PM</time>
+			
+				<pred>6.80</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+		</data>
+</datainfo>

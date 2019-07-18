@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="@string/pref_show_dice"
+        android:title="Show Dice Images"
+        android:summary="Show image of dice on roll"
+        android:defaultValue="true" />
+    <EditTextPreference
+        android:defaultValue="100"
+        android:key="@string/winning_score"
+        android:summary="Score required to win"
+        android:text="@string/winning_score"
+        android:title="Winning Score" />
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/roll_limit_names_array"
+        android:entryValues="@array/roll_limit_values_array"
+        android:key="@string/max_rolls"
+        android:summary="Set a max number of rolls per turn"
+        android:title="Max Roll Limit" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/custom_names"
+        android:summaryOff="Default names on"
+        android:summaryOn="Custom names on"
+        android:title="Allow Custom Names" />
+</PreferenceScreen>
