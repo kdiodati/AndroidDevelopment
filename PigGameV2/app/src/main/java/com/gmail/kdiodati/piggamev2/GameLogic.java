@@ -7,8 +7,8 @@ class GameLogic{
     Random rand = new Random();
 
     int rollCount; //keeps track of rolls this turn
-    int maxRolls;
-    int winScore;
+    int maxRolls; //if zero infinite rolls allowed
+    int winScore; //the score required to win, 100 at default
 
     int roll; //keeps track of last roll
     int turn; //which player's turn it is
@@ -44,7 +44,7 @@ class GameLogic{
                 winner = -1;
                 endTurn();
             }
-            else if (roll == 1){ //player 1 does not have 100 and rolled a 1, so pass turn
+            else if (roll == 1){ //player 1 does not have max and rolled a 1, so pass turn
                 endTurn();
             }
             //else keep rolling
@@ -52,7 +52,7 @@ class GameLogic{
 
         //player 2 cases
         else if (turn == 2) {
-            if (winner == -1) { //if player 1 has over 100
+            if (winner == -1) { //if player 1 has over max
                 if ( (score + p2 > p1) && ( (roll == 1) || ( (maxRolls != 0) && (rollCount >= maxRolls) ) ) ){ //if player 2 > player 1, p2 wins
                     winner = 2;
                     endTurn();
@@ -70,12 +70,12 @@ class GameLogic{
                 //else keep rolling
             }
 
-            else { //if player 1 does NOT have 100
-                if (score + p2 >= winScore) { //if player 2 has over 100, p2 wins
+            else { //if player 1 does NOT have max
+                if (score + p2 >= winScore) { //if player 2 has over max, p2 wins
                     winner = 2;
                     endTurn();
                 }
-                else if (roll == 1){ //if player 2 has less than 100, and rolls a 1, then p1 turn
+                else if (roll == 1){ //if player 2 has less than max, and rolls a 1, then p1 turn
                     endTurn();
                 }
                 //else keep rolling
@@ -105,10 +105,12 @@ class GameLogic{
         }
     }
 
+    //sets the maxRolls if settings are updated
     void updateMaxRolls(int mR) {
         maxRolls = mR;
     }
 
+    //sets winScore if settings are updated
     void updateWinScore(int wS) {
         winScore = wS;
     }

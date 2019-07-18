@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
+        //sets the integers from stored preferences
         maxRolls = Integer.parseInt(prefs.getString("max_rolls", "0"));
         winningScore = Integer.parseInt(prefs.getString("winning_score", "100"));
 
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     protected void onResume() {
         super.onResume();
 
-        //
+        //logic for show dice preference, makes die disappear if false
         showDice = prefs.getBoolean("pref_show_dice", true);
         if (showDice) {
             diePicture.setVisibility(View.VISIBLE);
@@ -89,26 +90,29 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             diePicture.setVisibility(View.GONE);
         }
 
-        //
+        //sets the score that the game is won at
         winningScore = Integer.parseInt(prefs.getString("winning_score", "100"));
-        if (winningScore < 0) {
+        if (winningScore < 0) { //if score is negative it will go to default 100
             winningScore = 100;
         }
         logic.updateWinScore(winningScore);
 
-        //
+        //sets the max number of rolls allowed per turn, default is 0 (meaning no limit)
         maxRolls = Integer.parseInt(prefs.getString("max_rolls", "0"));
         logic.updateMaxRolls(maxRolls);
 
-        //
+        //sets if custom names are allowed or just player 1/player 2
         customNames = prefs.getBoolean("custom_names", true);
         if (customNames) {
+            //shows editTexts
             p1Name.setVisibility(View.VISIBLE);
             p2Name.setVisibility(View.VISIBLE);
         }
         else {
+            //sets names to default options
             player1 = "Player 1";
             player2 = "Player 2";
+            //hides editTexts
             p1Name.setVisibility(View.GONE);
             p2Name.setVisibility(View.GONE);
         }
@@ -118,6 +122,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     public boolean onCreateOptionsMenu (Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
+        //This code is an exact copy of the rps game
     }
 
     @Override
@@ -135,7 +140,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         else {
             return super.onOptionsItemSelected(item);
         }
-        //this code is practically an exact copy of your rps game
+        //this code is practically an exact copy of the rps game
     }
 
     @Override
