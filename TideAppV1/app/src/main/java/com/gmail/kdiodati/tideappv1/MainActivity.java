@@ -36,7 +36,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
         //which will be used by the simple adapter
         for (TideItem item : tideItems) {
             HashMap<String, String> map = new HashMap<>();
-            
+
             map.put(DATE, item.getDateFormatted());
 
             map.put(HIGH_LOW_TIME, item.getHighLowTime());

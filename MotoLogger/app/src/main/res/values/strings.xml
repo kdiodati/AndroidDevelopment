@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MotoLogger</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="ride_log">Ride Log</string>
+</resources>
