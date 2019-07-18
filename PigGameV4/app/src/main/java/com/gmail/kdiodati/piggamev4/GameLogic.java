@@ -9,10 +9,6 @@ class GameLogic{
     String player1;
     String player2;
 
-    int rollCount; //keeps track of rolls this turn
-    int maxRolls; //sets the max number of rolls per turn
-    int winScore; //sets the score required to win the game
-
     int roll; //keeps track of last roll
     int turn; //which player's turn it is
     int p1; //score of player 1
@@ -20,12 +16,16 @@ class GameLogic{
     int score; //score of current turn
     int winner; //0 if no winner yet, -1 if possibly player 1, 1 if p1 won, 2 if p2 won
 
+    //int rollCount;
+    //int maxRolls;
+    //int winScore;
+
     boolean over;
 
     void rollTheDie() {
         int rng = (rand.nextInt(6 - 1)) + 1; //gets the random integer between 1-6
         checkRoll(rng);
-        rollCount++;
+        //rollCount++;
     }
 
     //does logic of checking if roll was 1 so as to not add to score
@@ -45,7 +45,8 @@ class GameLogic{
     private void checkWin() {
         //player 1 cases
         if (turn == 1) {
-            if (score + p1 >= winScore) { //player 1 has over max so let player 2 have final turn
+            //if (score + p1 >= winScore) { //player 1 has over max so let player 2 have final turn
+            if (score + p1 >= 100) { //player 1 has over max so let player 2 have final turn
                 winner = -1;
                 over = true;
                 //endTurn();
@@ -60,7 +61,8 @@ class GameLogic{
         //player 2 cases
         else if (turn == 2) {
             if (winner == -1) { //if player 1 has over 100
-                if ( (score + p2 > p1) && ( (roll == 1) || ( (maxRolls != 0) && (rollCount >= maxRolls) ) ) ){ //if player 2 > player 1, p2 wins
+                //if ( (score + p2 > p1) && ( (roll == 1) || ( (maxRolls != 0) && (rollCount >= maxRolls) ) ) ){ //if player 2 > player 1, p2 wins
+                if ( (score + p2 > p1) && ( (roll == 1) ) ) {           // || ( (maxRolls != 0) && (rollCount >= maxRolls) ) ) ){ //if player 2 > player 1, p2 wins
                     winner = 2;
                     endTurn();
                 }
@@ -72,7 +74,8 @@ class GameLogic{
             }
 
             else { //if player 1 does NOT have 100
-                if (score + p2 >= winScore) { //if player 2 has over 100, p2 wins
+                //if (score + p2 >= winScore) { //if player 2 has over 100, p2 wins
+                if (score + p2 >= 100) { //if player 2 has over 100, p2 wins
                     winner = 2;
                     endTurn();
                 }
@@ -84,11 +87,13 @@ class GameLogic{
             }
         }
 
+        /*
         if (maxRolls != 0) {
             if (rollCount >= maxRolls) {
                 over = true;
             }
         }
+        */
     }
 
     //does the logic of adding turn score to player score and passing turn to other player
@@ -102,10 +107,11 @@ class GameLogic{
             turn = 1;
         }
         score = 0;
-        rollCount = 0;
+        //rollCount = 0;
         over = false;
     }
 
+    /*
     void updateMaxRolls(int mR) {
         maxRolls = mR;
     }
@@ -113,8 +119,10 @@ class GameLogic{
     void updateWinScore(int wS) {
         winScore = wS;
     }
+    */
 
-    void resetGame(int mR, int wS) {
+    //void resetGame(int mR, int wS) {
+    void resetGame() {
         //sets or resets the variables to initial values
         roll = 1;
         turn = 1;
@@ -123,15 +131,16 @@ class GameLogic{
         score = 0;
         winner = 0;
 
-        //preferences variables
-        rollCount = 0;
-        maxRolls = mR;
-        winScore = wS;
-
         over = false;
+
+        //preferences variables
+        //rollCount = 0;
+        //maxRolls = mR;
+        //winScore = wS;
     }
 
-    void loadData(int roll_, int turn_, int p1_, int p2_, int score_, int winner_, int rollCount_, int maxRolls_, int winScore_, boolean over_) {
+    //void loadData(int roll_, int turn_, int p1_, int p2_, int score_, int winner_, int rollCount_, int maxRolls_, int winScore_, boolean over_) {
+    void loadData(int roll_, int turn_, int p1_, int p2_, int score_, int winner_, boolean over_) {
         //sets or resets the variables to game values
         roll = roll_;
         turn = turn_;
@@ -140,11 +149,11 @@ class GameLogic{
         score = score_;
         winner = winner_;
 
-        //preferences variables
-        rollCount = rollCount_;
-        maxRolls = maxRolls_;
-        winScore = winScore_;
-
         over = over_;
+
+        //preferences variables
+        //rollCount = rollCount_;
+        //maxRolls = maxRolls_;
+        //winScore = winScore_;
     }
 }

@@ -38,7 +38,8 @@ public class ParseHandler extends DefaultHandler {
         }
         else if (qName.equals("symbol")) {
             item.setSymbol(atts.getValue(2));
-        }    }
+        }
+    }
     
     @Override
     public void endElement(String namespaceURI, String localName, 

@@ -5,18 +5,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 
-public class FirstFragment extends Fragment {
+public class FirstFragment extends Fragment implements OnClickListener {
 
     private GameLogic logic;
 
     private EditText p1Name;
     private EditText p2Name;
 
-    public static final String PLAYER_1 = "player 1";
-    public static final String PLAYER_2 = "player 2";
+    private Button newGame;
+
+    public static final String PLAYER_1 = "player1";
+    public static final String PLAYER_2 = "player2";
 
     private FirstActivity activity;
 
@@ -38,53 +42,34 @@ public class FirstFragment extends Fragment {
         p1Name = (EditText) activity.findViewById(R.id.player1EditText);
         p2Name = (EditText) activity.findViewById(R.id.player2EditText);
 
+        newGame =(Button) activity.findViewById(R.id.newGameButton);
+
+        newGame.setOnClickListener(this);
+
         this.logic = new GameLogic();
         activity.setLogic(logic);
 
         twoPaneLayout = activity.findViewById(R.id.second_fragment) != null;
     }
 
-    public void play(View v) {
-        if (v.getId() == R.id.newGameButton) {
-            if (twoPaneLayout) {
-                logic.player1 = p1Name.getText().toString();
-                logic.player2 = p2Name.getText().toString();
-                activity.setLogic(logic);
-                activity.startGame();
-            }
-            else {
-                Intent intent = new Intent(getActivity(), SecondActivity.class);
-                intent.putExtra(PLAYER_1, p1Name.getText().toString());
-                intent.putExtra(PLAYER_2, p2Name.getText().toString());
-                startActivity(intent);
-            }
-        }
-    }
-
-    /*
     @Override
-    public boolean onCreateOptionsMenu (Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.newGameButton:
+                if (twoPaneLayout) { //if there are 2 fragments, run 2nd fragment
+                    logic.player1 = p1Name.getText().toString();
+                    logic.player2 = p2Name.getText().toString();
+                    activity.setLogic(logic);
+                    activity.startGame();
+                }
+                else { //if there is only one fragment, just start a new activity for 2nd fragment
+                    Intent intent = new Intent(getActivity(), SecondActivity.class);
+                    intent.putExtra(PLAYER_1, p1Name.getText().toString());
+                    intent.putExtra(PLAYER_2, p2Name.getText().toString());
+                    startActivity(intent);
+                }
+
+                break;
+        }
     }
-
-
-    @Override
-    public boolean onOptionsItemSelected (MenuItem item) {
-        int id = item.getItemId();
-
-        if (id == R.id.menu_settings) {
-            startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
-            return true;
-        }
-        else if (id == R.id.menu_about) {
-            Toast.makeText(this, "This game was written by Kyle Diodati", Toast.LENGTH_LONG).show();
-            return true;
-        }
-        else {
-            return super.onOptionsItemSelected(item);
-        }
-        //this code is practically an exact copy of your rps game
-    }
-    */
 }

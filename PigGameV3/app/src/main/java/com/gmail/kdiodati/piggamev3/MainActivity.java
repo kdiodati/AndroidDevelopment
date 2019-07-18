@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             player1 = savedInstanceState.getString("Player1");
             player2 = savedInstanceState.getString("Player2");
 
-            updateScreen();
+            updateScreen(); //update screen so the custom names can be shown
         }
     }
 
@@ -209,7 +209,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                     updateScreen();
                 }
                 else {
-                    logic.resetGame(maxRolls, winningScore);
+                    logic.resetGame(maxRolls, winningScore); //should be impossible to access this case
                     updateScreen();
                 }
                 break;
@@ -246,6 +246,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             diePicture.setImageResource(R.drawable.die6);
         }
 
+        //if the turn is over make the rollDie button invisible
         if (logic.over == true) {
             rollDie.setVisibility(INVISIBLE);
         }
